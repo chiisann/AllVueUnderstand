@@ -1,0 +1,357 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  background-color: white;
+  font-family: mostra-nuova,  vdl-logojr,'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','Arial',sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* header */
+header{
+  background-color: white;
+  /*width: 100%;*/
+  padding: 2%;
+  text-align: center;
+  color: #344c5c;
+}
+
+header .title {
+  font-size: 8vw;
+  font-family: mostra-nuova, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  padding: 0 0 0 30%;
+  text-align: left;
+}
+
+header .author {
+  font-size: 3vw;
+  font-family: mostra-nuova, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: center;
+  margin: 5%;
+}
+
+header .line {
+  background-color: #41b883;
+  width: 4vw;
+  height: 13vw;
+  position: absolute;
+  left: 80vw;
+}
+
+header .line2 {
+  background-color: #41b883;
+  width: 4vw;
+  height: 20vw;
+  position: absolute;
+  top: 5vw;
+  left: 87vw;
+}
+
+header .line3 {
+  background-color: #41b883;
+  width: 4vw;
+  height: 30vw;
+  position: absolute;
+  top: 10vw;
+  left: 17vw;
+}
+
+/* main */
+main {
+  margin:3%;
+}
+
+.main-text{
+  text-align: center;
+  font-size: 3vw;
+  padding: 10% 20% 10% 20%;
+  border-radius: 4px;
+  color: #344c5c;
+}
+
+.main-text-back {
+  text-align: center;
+  font-size: 3vw;
+  padding: 10%;
+  border-radius: 4px;
+  background-color:rgba(241, 241, 241, 0.644);
+  font-weight: 700;
+}
+
+.container {
+  position: relative;
+  background-color: rgb(65, 184, 131, 0.3);
+  padding: 3%;
+  color: white;
+  border-radius: 4px;
+}
+
+.container-wrap{
+  display: flex;
+  flex-wrap: nowrap;
+  /* justify-content: center; */
+  width: 100%
+}
+
+.container-pic {
+  width: 30%;
+  opacity: 0.8;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.container-pic img{
+  width: 100%;
+}
+
+.container .bigtext {
+  color: rgb(240, 238, 238);
+  font-size: 20vw;
+  width: 50%;
+  font-family: mostra-nuova, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+/* border */
+.container .border {
+  position: absolute;
+  top: -5%;
+  left: 5%;
+}
+
+.container .border1 {
+  position: absolute;
+  top: 70%;
+  left: 30%;
+}
+
+.container .border2 {
+  position: absolute;
+  top: 100%;
+  left: 5%;
+}
+
+/* (JS) */
+.border-container {
+  width: 65%;
+  height: 40%;
+}
+
+.border-style {
+  font-size: 3vw;
+  font-weight: 500;
+  text-align: center;
+  background-color: #41b883;
+  padding: 1% 2% 1% 2% ;
+  animation: In 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes In{
+  0% {
+    opacity: 0;
+    width: 70%;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    width: 96%
+  }
+}
+
+/*face*/
+.faces {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5%;
+}
+
+.face {
+  padding: 1rem;
+  text-align: center;
+  color: #344c5c;
+}
+
+.face .header-icon {
+  text-align: center;
+  font-size: 8vw;
+  color: #344c5c;
+  margin-bottom: 5%;;
+  transform: rorate(0deg);
+  transition-duration: 0.3s;
+}
+
+.face .header-icon.rotate {
+  transform: rotate(180deg);
+  transition-duration: 0.3s;
+  color: #41b883;
+}
+
+.face .header-icon.rotate2 {
+  transform: rotate(180deg);
+  transition-duration: 0.3s;
+  color:#F2E205;
+}
+
+.notification {
+  background-color: #41D6D8;
+  border-radius: 4px;
+  color: white;
+  padding: 1rem;
+}
+
+/* Box(JS) */
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10%;
+  width: 80%;
+  padding: 20% 0%;
+  background-color: #41b88352;
+  border-radius: 5%;
+}
+
+.box {
+  height: 45vw;
+  width: 20vw;
+  text-align: center;
+  margin: 0%;
+  opacity: 1;
+}
+
+.box .box-icon {
+  font-size: 8vw;
+  text-align: center;
+  padding-top: 20%;
+  height: 30%;
+  color:white;
+  background-color: #41b8838c;
+  transition-duration: 0.3s;
+}
+
+.box .box-light {
+  background-color: #41b883;
+  filter: brightness(120%);
+  transition-duration: 0.3s;
+}
+
+.box .box-text {
+  font-size: 3vw;
+  text-align: center;
+  height: 50%;
+  color: #344c5c;
+  background-color: rgb(250, 250, 250);
+  padding: 10%;
+  transition-duration: 0.3s;
+}
+
+.box-light::after {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 95%;
+  left: 40%;
+  width: 20%;
+  height: 10%;
+
+  /* ①疑似要素のボックスを影色で塗りつぶし */
+  background-color: rgb(42, 226, 165);
+  /* ②ブラーフィルターでぼかす */
+  filter: blur(3vw);
+  /* ③位置やサイズを調整 */
+  transform: translateY(15px) scale(1.05);
+  /* ④乗算で重ねる */
+  mix-blend-mode: multiply;
+  transition-duration: 0.2s;
+}
+
+.energy-back {
+  position: relative;
+  background-color: white;
+  padding: 1rem;
+}
+
+.energy-back .energy {
+  height: 10vw;
+  color: white;
+  background-color:#F2E205;
+}
+
+.cont-energy {
+  display: flex;
+  flex: wrap;
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  background-color: #41b8838c;
+  padding: 0 3% 0 3%;
+}
+
+.energy-big {
+  color: white;
+  font-size: 10vw;
+  width: 20%;
+  font-weight: 700;
+  padding: 5%;
+  background-color: #41b88352;
+}
+
+.energy-text {
+  color: white;
+  font-size: 3vw;
+  width: 50%;
+  padding: 5%;
+  background-color: #41b88352;
+}
+
+.energy-back .icon {
+  color: white;
+  font-size: 10vw;
+  padding: 13% 5% 8% 5%;
+  transition-duration: 0.3s;
+  width: 20%;
+  text-align: center;
+  background-color: #41b88352;
+}
+
+.energy-back .icon.flash{ /* .iconと.flashの間にスペースいらない */
+  color:#F2E205;
+  font-size: 13vw;
+  transition-duration: 0.3s;
+  background-color: white;
+  padding: 11% 5% 8% 5%;
+}
+
+/*フッター*/
+footer {
+  width: 100%;
+  height: 10vw; 
+  text-align: center;
+  padding: 10vw 0;
+  background-color: rgb(240, 238, 238)
+}
+
+.footer-text {
+  color: #344c5c;
+  font-size: 2vw;
+  margin-top: 3%;
+}
+
+/*レスポンシブPC用*/
+@media screen and (min-width: 960px){
+  main{
+      margin: 10%;
+      font-size: 2vw;
+  }
+}
